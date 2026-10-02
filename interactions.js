@@ -1,4 +1,20 @@
 const root = document.documentElement;
+const contactForm = document.querySelector('#contact-form');
+contactForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const fields = new FormData(contactForm);
+  const name = String(fields.get('name')).trim();
+  const email = String(fields.get('email')).trim();
+  const message = String(fields.get('message')).trim();
+  if (!name || !message) {
+    document.querySelector('#contact-form-status').textContent = 'Please enter your name and a message.';
+    return;
+  }
+  const subject = `Website enquiry from ${name}`;
+  const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+  window.location.href = `${contactForm.getAttribute('action')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  document.querySelector('#contact-form-status').textContent = 'Your email app should open with a draft. If it does not, use the email link above.';
+});
 const themeButton = document.querySelector('#theme-toggle');
 let savedTheme;
 try { savedTheme = localStorage.getItem('resume-theme'); } catch {}
