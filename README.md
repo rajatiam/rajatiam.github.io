@@ -1,8 +1,8 @@
-# Rajat Kumar — Web Resume
+# Rajat Kumar â€” Web Resume
 
 Personal resume website built with semantic HTML and responsive CSS, based on the supplied resume PDF.
 
-Live site: https://9Rajatkumar.github.io/web-resume/
+Live site: https://rajatiam.github.io/web-resume/
 
 ## Editing
 
