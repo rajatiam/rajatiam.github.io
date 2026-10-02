@@ -1,16 +1,23 @@
-# Rajat Kumar â€” Web Resume
-
-Personal resume website built with semantic HTML and responsive CSS, based on the supplied resume PDF.
+# Rajat Kumar ? Professional portfolio
 
 Live site: https://rajatiam.github.io/web-resume/
 
-## Editing
+## Update content
 
-- Update resume content and contact links in `index.html`.
-- Update visual styles in `styles.css`.
-- Replace `Rajat-Kumar-Resume.pdf` to update the downloadable resume.
-- Open `index.html` in a browser for a local preview.
+Edit `data/resume.json`, then run `npm run build` (Node.js 20+). Commit the data and generated output together. GitHub Pages publishes the root of `main`.
 
-GitHub Pages publishes the root of the `main` branch. Pushing changes automatically updates the website.
+The data file holds personal details, links, experience, skills, projects, certifications, and education. Empty certifications are omitted from the page and navigation. Only add verified facts and metrics.
 
-Includes mobile layouts, keyboard focus styles, a skip link, reduced-motion support, and print styles. Google Fonts are optional; system fonts provide a fallback. No build step or API keys are required.
+`scripts/build.mjs` contains reusable rendering functions and section templates. It generates semantic HTML, structured data, sitemap, robots file, and the social-card source. Pages render without JavaScript; `interactions.js` progressively adds filters, theme persistence, mobile navigation, and clipboard support. Project details use native HTML disclosure controls.
+
+## Visuals and assets
+
+- `styles.css`: base layout and themes.
+- `polish.css`: card styling, typography, responsive layouts.
+- `portfolio.css`: navigation and case-study refinements.
+- `social-card.png`: 1200 x 630 social preview. Re-render `social-card.html` at that size after changing the name or role.
+- `Rajat-Kumar-Resume.pdf`: original supplied PDF. Replace separately when your resume changes; the build does not rewrite it.
+
+No dependencies or framework runtime are required. Test with JavaScript enabled and disabled, keyboard navigation, light/dark themes, and narrow screens. Print CSS expands experience and filtered skills. Respect reduced-motion preferences.
+
+A portrait is not included until the original image file is supplied. No unverified certifications, business metrics, or production project results are published.

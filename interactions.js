@@ -55,7 +55,7 @@ copy.hidden = false;
 copy.addEventListener('click', async () => {
   const status = document.querySelector('#copy-status');
   try {
-    await navigator.clipboard.writeText('rajatcspcst@gmail.com');
+    await navigator.clipboard.writeText(document.querySelector('.email').getAttribute('href').slice(7));
     status.textContent = 'Email copied to clipboard.';
   } catch {
     status.textContent = 'Select the email address above to copy it, or click it to open your email app.';
@@ -74,3 +74,26 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-10% 0px -55% 0px', threshold: 0 });
   for (const link of links) observer.observe(document.querySelector(link.hash));
 }
+
+const header = document.querySelector('.header');
+const menu = document.querySelector('.menu-toggle');
+menu.hidden = false;
+header.classList.add('menu-ready');
+function closeMenu() {
+  header.classList.remove('menu-open');
+  menu.setAttribute('aria-expanded', 'false');
+  menu.textContent = 'Menu';
+}
+menu.addEventListener('click', () => {
+  const open = header.classList.toggle('menu-open');
+  menu.setAttribute('aria-expanded', String(open));
+  menu.textContent = open ? 'Close' : 'Menu';
+});
+header.querySelector('nav').addEventListener('click', (event) => {
+  if (event.target.closest('a')) closeMenu();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && header.classList.contains('menu-open')) {
+    closeMenu(); menu.focus();
+  }
+});

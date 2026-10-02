@@ -1,0 +1,121 @@
+{
+  "name": "Rajat Kumar",
+  "initials": "RK",
+  "role": "Full Stack Developer",
+  "specialization": "Python / Angular",
+  "experience": "4+ years",
+  "location": "Noida, India",
+  "email": "rajatcspcst@gmail.com",
+  "phone": "+91 7250460453",
+  "github": "https://github.com/rajatiam",
+  "linkedin": "https://www.linkedin.com/in/rajathere/",
+  "site": "https://rajatiam.github.io/web-resume/",
+  "pdf": "Rajat-Kumar-Resume.pdf",
+  "headline": [
+    "Python backend.",
+    "Angular frontend."
+  ],
+  "summary": "Full Stack Developer with 4+ years of experience building enterprise applications. I connect Angular interfaces with Python/FastAPI APIs and SQL databases, then deploy and support them on AWS.",
+  "about": [
+    "Full Stack Developer focused on Python, FastAPI, Angular, and SQL.",
+    "Enterprise experience across ERP, logistics, freight, CRM, and reporting.",
+    "Hands-on delivery from interface and API development to AWS deployment and production support."
+  ],
+  "experienceItems": [
+    {
+      "role": "Senior Software Developer",
+      "period": "Apr 2022 — Present",
+      "location": "Noida, India",
+      "company": "Ozdocs IND PVT LTD · Full Stack & Cloud/DevOps",
+      "current": true,
+      "bullets": [
+        "Delivered Angular and Python/FastAPI application features for ERP, logistics, freight, CRM, and reporting workflows.",
+        "Built reusable Angular components and reactive forms to support consistent interfaces, validation, and API error handling across enterprise applications.",
+        "Secured application and API access with JWT authentication and role-based permissions; tuned SQL Server and PostgreSQL queries, stored procedures, and indexes for application performance. Automated report, invoice, and document generation with Python to support business and operational processes.",
+        "Standardized application environments with Docker and supported scaling and rolling deployments through Kubernetes; defined AWS infrastructure with Terraform.",
+        "Automated build, validation, containerization, and deployment steps with GitHub Actions and Jenkins; investigated production issues using Linux logs and AWS CloudWatch."
+      ]
+    },
+    {
+      "role": "Deputy Manager — Personal Banker",
+      "period": "Jul 2021 — Apr 2022",
+      "location": "Palam, New Delhi",
+      "company": "HDFC Bank",
+      "current": false,
+      "bullets": [
+        "Managed customer accounts, banking operations, and customer relationships.",
+        "Coordinated with operations and technical teams to resolve process issues and improve customer experience.",
+        "Developed skills in stakeholder communication, process management, and operational coordination."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "application",
+      "title": "Frontend",
+      "description": "Angular · TypeScript · RxJS · Reactive Forms · Angular Material · HTML / CSS"
+    },
+    {
+      "category": "application",
+      "title": "Backend & APIs",
+      "description": "Python · FastAPI · REST APIs · JWT / RBAC. Also worked with Django and Flask."
+    },
+    {
+      "category": "application",
+      "title": "Data",
+      "description": "PostgreSQL · SQL Server · Query optimization · Indexing · Stored procedures"
+    },
+    {
+      "category": "delivery",
+      "title": "Cloud & delivery",
+      "description": "AWS · Docker · Kubernetes · Terraform · GitHub Actions · Jenkins"
+    },
+    {
+      "category": "delivery",
+      "title": "Development tools",
+      "description": "Git · Postman · Jira · Linux · Bash · Nginx"
+    },
+    {
+      "category": "delivery",
+      "title": "Engineering practices",
+      "description": "API design · Automated delivery · Production troubleshooting · Agile / Scrum"
+    }
+  ],
+  "projects": [
+    {
+      "name": "AWS VPC provisioning with Terraform & Jenkins",
+      "type": "Supporting cloud project",
+      "description": "A public infrastructure example that defines an AWS network in version-controlled code and puts the Terraform workflow into a Jenkins pipeline.",
+      "problem": "Make VPC configuration and provisioning steps explicit and repeatable instead of relying on manual console actions.",
+      "solution": "Terraform defines an AWS VPC with configurable CIDR, DNS support, and DNS hostnames. Jenkins runs init, validate, plan, and apply on a Windows agent using stored AWS credentials.",
+      "outcome": "A reviewable VPC definition and four-stage provisioning pipeline, with region and network range exposed as configuration variables.",
+      "tags": [
+        "Terraform",
+        "AWS VPC",
+        "Jenkins",
+        "Infrastructure as code"
+      ],
+      "url": "https://github.com/rajatiam/terraform-vpc",
+      "architecture": [
+        "Jenkins Windows agent",
+        "Terraform init / validate / plan / apply",
+        "AWS provider",
+        "VPC with DNS support"
+      ],
+      "scope": "Public infrastructure example. Production usage, deployment success, and performance metrics are not documented in the repository."
+    }
+  ],
+  "certifications": [],
+  "education": [
+    {
+      "period": "2020 - 2021",
+      "degree": "Post Graduate Diploma in Sales & Relationship Banking",
+      "institution": "Manipal Academy of Higher Education / Bengaluru"
+    },
+    {
+      "period": "2019",
+      "degree": "Bachelor of Engineering - Computer Science",
+      "institution": "RGPV ? Bhopal"
+    }
+  ]
+}
