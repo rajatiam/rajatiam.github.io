@@ -1,10 +1,12 @@
 # Rajat Kumar ? Professional portfolio
 
-Live site: https://rajatiam.github.io/web-resume/
+Site URL: https://rajatiam.github.io/
 
 ## Update content
 
 Edit `data/resume.json`, then run `npm run build` (Node.js 20+). Commit the data and generated output together. GitHub Pages publishes the root of `main`.
+
+To publish at this URL, place the contents of this folder in the `rajatiam/rajatiam.github.io` repository and configure GitHub Pages to deploy from `main`, `/ (root)`.
 
 The data file holds personal details, links, experience, skills, projects, certifications, and education. Empty certifications are omitted from the page and navigation. Only add verified facts and metrics.
 
