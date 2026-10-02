@@ -23,12 +23,17 @@ function setTheme(theme) {
   themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
   themeButton.textContent = theme === 'dark' ? 'Light theme' : 'Dark theme';
 }
-setTheme(savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+const systemTheme = matchMedia('(prefers-color-scheme: dark)');
+setTheme(['light', 'dark'].includes(savedTheme) ? savedTheme : (systemTheme.matches ? 'dark' : 'light'));
 themeButton.hidden = false;
 themeButton.addEventListener('click', () => {
   const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
   setTheme(theme);
+  savedTheme = theme;
   try { localStorage.setItem('resume-theme', theme); } catch {}
+});
+systemTheme.addEventListener('change', (event) => {
+  if (!['light', 'dark'].includes(savedTheme)) setTheme(event.matches ? 'dark' : 'light');
 });
 
 const filters = document.querySelector('.skill-filters');

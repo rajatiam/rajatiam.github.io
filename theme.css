@@ -1,0 +1,47 @@
+/* Shared palette for every component; loaded after layout styles. */
+:root {
+  color-scheme: light;
+  --bg:#f5f7fc;--bg-2:#eaf0f9;--bg-3:#e2eaf5;
+  --panel:#fff;--panel-strong:#fff;--panel-soft:#eaf0f9;
+  --line:#cbd5e1;--text:#17243a;--text-soft:#42536d;--muted:#52627b;
+  --blue:#1d4ed8;--cyan:#0e7490;--purple:#6d28d9;
+  --paper:var(--bg);--ink:var(--text);--surface:var(--panel);
+  --soft:var(--panel-soft);--brand:var(--blue);--green:var(--cyan);--accent:var(--blue);
+  --shadow:0 18px 50px #1e3a5f12;
+}
+:root[data-theme=dark] {
+  color-scheme:dark;
+  --bg:#080c14;--bg-2:#0d1728;--bg-3:#101a2d;
+  --panel:#111c2e;--panel-strong:#15233a;--panel-soft:#182740;
+  --line:#35465f;--text:#eaf2ff;--text-soft:#b7c7db;--muted:#a4b5d0;
+  --blue:#93c5fd;--cyan:#67e8f9;--purple:#c4b5fd;
+  --shadow:0 18px 50px #0005;
+}
+body{background:radial-gradient(circle at top right,#3b82f610,transparent 32%),var(--bg);color:var(--text)}
+.header{background:var(--panel);border-color:var(--line);box-shadow:var(--shadow)}
+.hero .eyebrow,.secondary,.social a,.theme-toggle,.menu-toggle,.detail-toggle,.skill-filters button,.copy-email-row button{background:var(--panel-soft);color:var(--text);border-color:var(--line)}
+.header nav a,.social a{color:var(--text-soft)}
+.header nav a:hover,.header nav a[aria-current="location"]{background:var(--panel-soft);color:var(--blue)}
+h1>span{-webkit-text-fill-color:var(--text);background:none;color:var(--text)}
+.profile-card,.job,.project,.contact,.skills-grid article{background:var(--panel);color:var(--text);border-color:var(--line);box-shadow:var(--shadow)}
+.profile-card .monogram,.card-role,.stack-row strong,.contact h2,.contact .email,.contact-form h3,.form-field label{color:var(--text)}
+.card-top,.card-sub,.stack-row span,.card-bottom,.contact>div>p:not(.eyebrow),.contact-links,.copy-email-row span,.contact-form .form-help{color:var(--text-soft)}
+.profile-card:before{border-color:var(--line)}
+.skills-section,.project-details{background:var(--panel-soft);border-color:var(--line)}
+.skills-grid article:hover{background:var(--panel-strong);border-color:var(--blue)}
+.pill,.tags span{background:var(--panel-soft);color:var(--cyan);border-color:var(--line)}
+.case-study summary,.project-details span{color:var(--text)}
+.primary,.skill-filters button[aria-pressed=true]{background:#1d4ed8;color:#fff;border-color:#1d4ed8}
+.button:hover{background:#1e40af;color:#fff;border-color:#1e40af}
+.theme-toggle:hover,.menu-toggle:hover,.detail-toggle:hover,.copy-email-row button:hover{background:var(--bg-3);color:var(--text)}
+.contact .email{border-color:var(--line)}
+.contact-form{background:var(--panel-soft);border-color:var(--line)}
+.form-field input,.form-field textarea{background:var(--panel);color:var(--text);border-color:var(--line)}
+.form-field input::placeholder,.form-field textarea::placeholder{color:var(--muted)}
+.profile-portrait{border-color:var(--line)}
+.skip{background:var(--panel);color:var(--text)}
+:where(a,button,summary,input,textarea):focus-visible{outline-color:var(--blue)}
+@media print {
+  :root,:root[data-theme=dark]{--bg:#fff;--panel:#fff;--panel-soft:#fff;--text:#000;--text-soft:#333;--muted:#333;--line:#ccc;--shadow:none}
+  body{background:#fff}.contact-form{display:none}
+}

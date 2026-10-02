@@ -17,6 +17,7 @@ The data file holds personal details, links, experience, skills, projects, certi
 - `styles.css`: base layout and themes.
 - `polish.css`: card styling, typography, responsive layouts.
 - `portfolio.css`: navigation and case-study refinements.
+- `theme.css`: shared light/dark colors for all components, loaded after layout styles.
 - `social-card.png`: 1200 x 630 social preview. Re-render `social-card.html` at that size after changing the name or role.
 - `Rajat-Kumar-Resume.pdf`: original supplied PDF. Replace separately when your resume changes; the build does not rewrite it.
 
