@@ -60,6 +60,7 @@ li::marker{color:var(--green)}
 @media(prefers-reduced-motion:reduce){.header nav a{transition:none}}
 .header .wordmark{font-size:19px;letter-spacing:-.7px;white-space:nowrap}
 .section{border-top:0}
+.profile-card .stack-row,.profile-card .card-bottom{border-top:0}
 .about,.education{grid-template-columns:minmax(0,1fr)}
 .profile-portrait{display:block;width:100%;aspect-ratio:4 / 3;height:auto;object-fit:cover;object-position:center;border-radius:14px;margin:24px 0;border:1px solid #ffffff26}
 .profile-card .monogram{font-size:clamp(32px,3.2vw,44px);letter-spacing:-1.5px;line-height:1.2;padding:36px 0 26px;overflow-wrap:normal}
