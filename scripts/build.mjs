@@ -9,8 +9,8 @@ const download = () => `<a class="button secondary" href="${esc(d.pdf)}" downloa
 const navItems = ['About','Experience','Skills','Projects',...(d.certifications.length?['Certifications']:[]),'Education','Contact'];
 let profilePortrait = '';
 try {
-  await readFile(new URL('portrait.jpg', root));
-  profilePortrait = `<img class="profile-portrait" src="portrait.jpg" alt="Portrait of ${esc(d.name)}" width="1448" height="1086" decoding="async">`;
+  await readFile(new URL('portrait.jpeg', root));
+  profilePortrait = `<img class="profile-portrait" src="portrait.jpeg" alt="Portrait of ${esc(d.name)}" width="1448" height="1086" decoding="async">`;
 } catch (error) {
   if (error.code !== 'ENOENT') throw error;
 }

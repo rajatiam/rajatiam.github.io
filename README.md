@@ -22,4 +22,4 @@ The data file holds personal details, links, experience, skills, projects, certi
 
 No dependencies or framework runtime are required. Test with JavaScript enabled and disabled, keyboard navigation, light/dark themes, and narrow screens. Print CSS expands experience and filtered skills. Respect reduced-motion preferences.
 
-A portrait is not included until the original image file is supplied. No unverified certifications, business metrics, or production project results are published.
+`portrait.jpeg` is the supplied profile photo. Replace it and rebuild to update the portrait. No unverified certifications, business metrics, or production project results are published.
