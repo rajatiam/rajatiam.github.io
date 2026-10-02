@@ -59,6 +59,8 @@ li::marker{color:var(--green)}
 @media(max-width:450px){.wrap{width:calc(100% - 32px)}.hero .eyebrow{font-size:8px;letter-spacing:.6px;max-width:100%}.hero h1>span{font-size:clamp(32px,9vw,40px)}.hero .actions .button{flex-basis:100%}.profile-card{padding:24px}.monogram{font-size:84px}.project{padding:20px}.project h3{font-size:26px}.contact{width:calc(100% - 32px);padding:28px 22px}.contact h2{font-size:36px}.contact .email{font-size:clamp(17px,5.5vw,24px)}.social{gap:20px}.header-actions{gap:6px}}
 @media(prefers-reduced-motion:reduce){.header nav a{transition:none}}
 .header .wordmark{font-size:19px;letter-spacing:-.7px;white-space:nowrap}
+.section{border-top:0}
+.about,.education{grid-template-columns:minmax(0,1fr)}
 .profile-portrait{display:block;width:100%;aspect-ratio:4 / 3;height:auto;object-fit:cover;object-position:center;border-radius:14px;margin:24px 0;border:1px solid #ffffff26}
 .profile-card .monogram{font-size:clamp(32px,3.2vw,44px);letter-spacing:-1.5px;line-height:1.2;padding:36px 0 26px;overflow-wrap:normal}
 @media(max-width:450px){.header .wordmark{font-size:17px}.header-actions .nav-download{display:none}.header{gap:8px}.header-actions .theme-toggle{padding:7px 8px}.profile-card .monogram{font-size:36px}}
